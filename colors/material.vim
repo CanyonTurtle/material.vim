@@ -17,6 +17,8 @@ let g:material_terminal_italics = get(g:, 'material_terminal_italics', 0)
 let g:material_theme_style = get(g:, 'material_theme_style', 'default')
 
 " Color Palette
+if g:material_theme_style == 'black'
+  let s:gray1 = '#000000'
 if g:material_theme_style == 'default'
   let s:gray1 = '#263238'
 elseif g:material_theme_style == 'palenight'
